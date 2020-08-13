@@ -263,6 +263,21 @@ def _teamUpdate(arg, match):
         embed.add_field(name=f'Remaining',value="\n".join(match.playerPings) ,inline=False)
     return embed
 
+def _voice():
+    embed = discord.Embed(
+        colour=discord.Color.blue(),
+        title='TeamSpeak',
+        description='Server Address: [`PSB`](http://invite.teamspeak.com/PSB/)\n'
+                    '*No Password!*\n'
+                    '> Download [TeamSpeak](https://teamspeak.com/en/downloads/)\n'
+                    '> Download [Overwolf](https://download.overwolf.com/install/Download?PartnerId=3337), a TS overlay to see who\'s talking!',
+        url="https://teamspeak.com/en/downloads/"
+    )
+    embed.set_author(name="Voice comms are held in:")
+    embed.set_image(url='https://cdn.discordapp.com/attachments/743143508373930045/743489519566979143/unknown.png')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/743143508373930045/743488294699925594/teamspeaklogo_5d00347a0cb48.png')
+    return embed
+
 def _jaegerCalendar(arg):
     embed = Embed(colour=Color.blue(), title="Jaeger Calendar", url = "https://docs.google.com/spreadsheets/d/1dS8dMz8FhxnSBxPs3gfj_L5PsFzC8mtHHMlUkNYtjEI/",
     description = "Pick a base currently available in the calendar!")
